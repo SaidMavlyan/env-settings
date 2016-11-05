@@ -1,1 +1,1 @@
-# env-settings
+# Various personal settings and notes

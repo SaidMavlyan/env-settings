@@ -202,14 +202,20 @@ hi phpKeyword  ctermfg=40         ctermbg=NONE      cterm=NONE
 " --------------------------------
 " JavaScript highlighting
 " --------------------------------
-hi javaScriptBoolean     ctermfg=146        ctermbg=NONE      cterm=NONE
+hi javaScriptBoolean     ctermfg=93         ctermbg=NONE      cterm=NONE
+hi javaScriptNumber      ctermfg=93         ctermbg=NONE      cterm=NONE
 hi javaScriptOperator    ctermfg=28         ctermbg=NONE      cterm=NONE
 hi javaScriptIdentifier  ctermfg=28         ctermbg=NONE      cterm=NONE
 hi javaScriptFutureKeys  ctermfg=40         ctermbg=NONE      cterm=NONE
 hi javaScriptFunction    ctermfg=45         ctermbg=NONE      cterm=NONE
 hi javaScriptType        ctermfg=45         ctermbg=NONE      cterm=NONE
 hi javaScriptBranch      ctermfg=197        ctermbg=NONE      cterm=NONE
+hi javaScriptOperator    ctermfg=197        ctermbg=NONE      cterm=NONE
+hi javaScriptOpAssign    ctermfg=197        ctermbg=NONE      cterm=NONE
+hi javaScriptLabel       ctermfg=114        ctermbg=NONE      cterm=NONE
+hi javaScriptFuncBlock   ctermfg=252        ctermbg=NONE      cterm=NONE
 hi javaScriptParen       ctermfg=252        ctermbg=NONE      cterm=NONE
+hi javaScriptBracket     ctermfg=252        ctermbg=NONE      cterm=NONE
 
 " --------------------------------
 " CSS highlighting
