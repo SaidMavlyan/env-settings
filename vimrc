@@ -10,6 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'scrooloose/nerdtree'
 Plugin 'pangloss/vim-javascript'
 
 " All of your Plugins must be added before the following line
@@ -172,3 +173,4 @@ map <F4> :execute " grep -srnw --binary-files=without-match --exclude-dir=.git  
 map <C-a> <esc>ggVG
 map <C-y> "+y
 map <C-p> <esc>"+P
+map <C-n> :NERDTreeToggle<CR>

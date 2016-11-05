@@ -9,3 +9,5 @@
 [user]
 	name = Said M
 	email = dontmailme@example.com
+[push]
+	default = simple
