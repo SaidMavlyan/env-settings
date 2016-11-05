@@ -8,6 +8,8 @@
 	ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
 [user]
 	name = Said M
-	email = dontmailme@example.com
+	email = said.mavlyan@protonmail.com
 [push]
 	default = simple
+[merge]
+	tool = vimdiff

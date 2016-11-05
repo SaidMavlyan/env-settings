@@ -136,12 +136,8 @@ if has("autocmd")
 
 	" Put these in an autocmd group, so that we can delete them easily.
 	augroup mysettings
-	au FileType xslt,xml,css,html,xhtml,sh,config,c,cpp,docbook,javascript set smartindent shiftwidth=2 softtabstop=2 expandtab
+	au FileType ino,xslt,xml,css,html,xhtml,sh,config,c,cpp,docbook,javascript set smartindent shiftwidth=2 softtabstop=2 expandtab
 	au FileType css set omnifunc=csscomplete#CompleteCSS
-	au FileType tex set wrap shiftwidth=2 softtabstop=2 expandtab
-
-	autocmd FileType html hi Identifier ctermfg=NONE
-	autocmd FileType html hi Function   ctermfg=NONE
 
 	" PHP settings
 	autocmd FileType php set omnifunc=phpcomplete#CompletePHP
@@ -151,7 +147,10 @@ if has("autocmd")
 	autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 
 	" Remove trailing whitespaces
-	autocmd FileType bash,javascript,c,cpp,java,php,python autocmd BufWritePre <buffer> %s/\s\+$//e
+	autocmd FileType bash,ino,css,javascript,c,cpp,java,php,python autocmd BufWritePre <buffer> %s/\s\+$//e
+
+	" Syntax file for arduino files
+	autocmd! BufNewFile,BufReadPost *.ino,*.pde setlocal ft=arduino
 
 	" Confirm to PEP8
 	au FileType python set tabstop=4 softtabstop=4 expandtab shiftwidth=4 cinwords=if,elif,else,for,while,try,except,finally,def,class
@@ -174,3 +173,4 @@ map <C-a> <esc>ggVG
 map <C-y> "+y
 map <C-p> <esc>"+P
 map <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeWinPos = "right"

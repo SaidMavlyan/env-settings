@@ -10,3 +10,7 @@ function cd() { builtin cd "$@" && ls; }
 
 export TERM=xterm-256color
 export NODE_PATH=/usr/lib/node_modules
+
+if [ -d "$HOME/bin" ] ; then
+  PATH="$PATH:$HOME/bin"
+fi
