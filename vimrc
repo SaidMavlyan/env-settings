@@ -10,6 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'editorconfig/editorconfig-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'pangloss/vim-javascript'
 
@@ -136,7 +137,7 @@ if has("autocmd")
 
 	" Put these in an autocmd group, so that we can delete them easily.
 	augroup mysettings
-	au FileType ino,xslt,xml,css,html,xhtml,sh,config,c,cpp,docbook,javascript set smartindent shiftwidth=2 softtabstop=2 expandtab
+	au FileType ino,xslt,xml,css,html,xhtml,sh,config,c,cpp,php,docbook,javascript set smartindent shiftwidth=2 softtabstop=2 expandtab
 	au FileType css set omnifunc=csscomplete#CompleteCSS
 
 	" PHP settings
