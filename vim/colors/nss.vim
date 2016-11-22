@@ -34,6 +34,7 @@ hi Folded         ctermfg=243       ctermbg=236       cterm=italic
 hi VertSplit       ctermfg=244      ctermbg=7         cterm=NONE
 hi ColorColumn     ctermfg=NONE     ctermbg=7         cterm=NONE
 hi TabLine         ctermfg=245      ctermbg=236       cterm=NONE
+hi TabNum          ctermfg=245      ctermbg=236       cterm=NONE
 hi TabLineFill     ctermfg=245      ctermbg=236       cterm=NONE
 hi TabLineSel      ctermfg=251      ctermbg=NONE      cterm=NONE
 
