@@ -31,7 +31,7 @@ hi Folded         ctermfg=243       ctermbg=236       cterm=italic
 " -------------------------
 " - Window/Tab delimiters -
 " -------------------------
-hi VertSplit       ctermfg=244      ctermbg=7         cterm=NONE
+hi VertSplit       ctermfg=245      ctermbg=235       cterm=NONE
 hi ColorColumn     ctermfg=NONE     ctermbg=7         cterm=NONE
 hi TabLine         ctermfg=245      ctermbg=236       cterm=NONE
 hi TabNum          ctermfg=245      ctermbg=236       cterm=NONE
@@ -48,8 +48,8 @@ hi IncSearch       ctermfg=235      ctermbg=208       cterm=NONE
 " -----------------
 " - Prompt/Status -
 " -----------------
-hi StatusLine      ctermfg=NONE     ctermbg=7         cterm=NONE
-hi StatusLineNC    ctermfg=NONE     ctermbg=238       cterm=NONE
+hi StatusLine      ctermfg=246      ctermbg=236       cterm=NONE
+hi StatusLineNC    ctermfg=245      ctermbg=236       cterm=NONE
 hi WildMenu        ctermfg=0        ctermbg=6         cterm=NONE
 hi Question        ctermfg=10       ctermbg=NONE      cterm=NONE
 hi Title           ctermfg=3        ctermbg=NONE      cterm=bold
