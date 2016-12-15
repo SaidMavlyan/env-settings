@@ -51,6 +51,7 @@ set scrolloff=2                 " Minimum lines to keep above and below cursor
 set foldenable                  " Auto fold code
 set list
 set listchars=tab:›\ ,trail:•,extends:▶,nbsp:. " Highlight problematic whitespace
+set clipboard^=unnamed
 
 set hidden                          " Allow buffer switching without saving
 set diffopt=vertical
@@ -174,8 +175,10 @@ map <F4> :execute " grep -srnw --binary-files=without-match --exclude-dir=.git -
 nnoremap <F3> :buffers<CR>:buffer<Space>
 
 map <C-a> <esc>ggVG
-map <C-d> <esc>V%
+map <C-h> <esc>V%
+map <C-m> <esc>V%=
 map <C-y> "+y
 map <C-p> <esc>"+P
 map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeWinPos = "right"
+
