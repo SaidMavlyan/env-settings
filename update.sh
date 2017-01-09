@@ -6,4 +6,5 @@ rsync -avz $HOME/.vimrc vimrc
 rsync -avz $HOME/.mongorc.js mongorc.js
 rsync -avz $HOME/.vim/colors/nss.vim vim/colors/nss.vim
 rsync -avz $HOME/.gitconfig gitconfig
+rsync -avz $HOME/.tmux.conf tmux.conf
 rsync -avz $HOME/.config/terminator/config terminator.conf
