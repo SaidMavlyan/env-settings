@@ -13,6 +13,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'pangloss/vim-javascript'
+Plugin 'Chiel92/vim-autoformat'
+Plugin 'leafgarland/typescript-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -138,7 +140,8 @@ if has("autocmd")
 
 	" Put these in an autocmd group, so that we can delete them easily.
 	augroup mysettings
-	au FileType ino,xslt,xml,css,html,xhtml,sh,config,c,cpp,php,docbook,javascript set smartindent shiftwidth=2 softtabstop=2 expandtab
+	au FileType xslt,xml,css,html,xhtml,sh,config,php,docbook,javascript set smartindent shiftwidth=2 softtabstop=2 expandtab
+	au FileType c,cpp,arduino set tabstop=8 softtabstop=8 expandtab shiftwidth=8
 	au FileType css set omnifunc=csscomplete#CompleteCSS
 
 	" PHP settings
@@ -149,7 +152,7 @@ if has("autocmd")
 	autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 
 	" Remove trailing whitespaces
-	autocmd FileType bash,ino,css,javascript,c,cpp,java,php,python autocmd BufWritePre <buffer> %s/\s\+$//e
+	autocmd FileType bash,arduino,css,javascript,c,cpp,java,php,python autocmd BufWritePre <buffer> %s/\s\+$//e
 
 	" Syntax file for arduino files
 	autocmd! BufNewFile,BufReadPost *.ino,*.pde setlocal ft=arduino
@@ -180,5 +183,10 @@ map <C-m> <esc>V%=
 map <C-y> "+y
 map <C-p> <esc>"+P
 map <C-n> :NERDTreeToggle<CR>
+map <A-l> <Esc><j>
 let g:NERDTreeWinPos = "right"
+
+" variables for Autoformat plugin
+let g:formatdef_my_custom_html = '"html-beautify -s 2"'
+let g:formatters_html = ['my_custom_html']
 

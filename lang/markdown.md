@@ -63,7 +63,7 @@ As Grace Hopper said:
 # CODEBLOCK
 
 ```python
-def print(str)
+def pr(str):
     print(str)
 ```
 ----------------------------------------
