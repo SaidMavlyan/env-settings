@@ -1,11 +1,11 @@
-###Related:
+### Related:
 1. Make - GNU make utility to maintain groups of programs
 2. Valgrind - a suite of tools for debugging and profiling programs
 3. gdb - The GNU debugger
 4. Generating core dump files
 
-###Structures:
-```c
+### Structures:
+```C
 struct Object {
     struct Object *next;
     char *name;
@@ -13,8 +13,8 @@ struct Object {
 };
 ```
 
-###Unions:
-```c
+### Unions:
+```C
 union Mem {
     int integer;
     float ftype;
@@ -22,27 +22,28 @@ union Mem {
 }
 ```
 
-###Pointers_to_funcions:
-```
+### Pointers_to_funcions:
+```C
 int (*Pointer_name)(int a, int b);
 Pointer_name = defined_function;
 printf("%d is same as %d", Pointer_name, defined_function);
 ```
 
-###CPP_argument_passing:
-```
+### CPP_argument_passing:
+```C
 #define function(M, ...) fprintf(stderr, "Text in %s" M "\n", __FILE__, ##__VA_ARGS__)
 #define B A##B // Concatenation in macros (AB)
 #define print(text) { printf("%s", #text);
 static inline function();
 ```
-###Variable_argument_functions:
-```
+
+### Variable_argument_functions:
+```C
 function(const char *fmt, ...);
 ```
 
-###Functions:
-```
+### Functions:
+```C
 void *memmove(void *dest, void *src, size_t n)
 void bcopy(void *dest, void *src, size_t n)
 void *memcpy(void *dest, void *src, size_t n)
@@ -123,6 +124,3 @@ vscanf        input format conversion
 vsprintf      formatted output conversion
 vsscanf       input format conversion
 ```
-
-###Concepts:
-Linked lists, sort algorithms(radix, bubble, merge, quick, heap, shell...),

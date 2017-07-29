@@ -1,18 +1,10 @@
-## Resources
+[spartan example](./spartan.js)
 
+## Resources
 ```js
     https://developer.mozilla.org/en-US/docs/Web/JavaScript
 ```
-## Arrays
-```js
-    arr.length; // size of the array
-```
-## Comments
-```js
-    //
-    /*...*/
-    <!--
-```
+
 ##TYPES
 ===
 

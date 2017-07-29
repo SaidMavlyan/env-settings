@@ -13,3 +13,5 @@
 	default = current
 [merge]
 	tool = vimdiff
+[core]
+	trustctime = false
