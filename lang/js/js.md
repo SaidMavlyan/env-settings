@@ -24,12 +24,27 @@
 
     => // Arrow functions
     for(var prop in obj){};
-    forEach();
+    arr.forEach((v) => {...});
     filter();
 ```
 
----
-##
 
-```js
+```es6
+    function func(v, w = 4) {} // default arguments
+    function f(a, b, ...c) {} // extended parameter handling, spreading
+    let str = `some text with ${var1}` // string interpolation
+    0b111110111 === 503; 0o767 === 503; // binary, octal literals
+    let obj = { foo: "bar", [ "baz" + quux() ]: 42 }; // computed property names
+    obj = { foo (a, b) { … }, bar (x, y) { … }, *quux (x, y) { … } }; // method properties
+    var list = [ 1, 2, 3 ]; var [ a, , b ] = list; [ b, a ] = [ a, b ]; // destructuring assignment
+    var { op, lhs, rhs } = getASTNode(); // object destructuring
+    import * as math from "lib/math"; // import modules
+    
 ```
+## Builtins
+
+arr = Array(size).fill(val); // ES6
+var deleted_items_arr = arr.splice(index, delete_count);
+arr.concat(arr1);
+
+Math.max(...arr);
