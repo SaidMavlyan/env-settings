@@ -1,0 +1,26 @@
+set mouse=a                     " Automatically enable mouse usage
+set mousehide                   " Hide the mouse cursor while typing
+set nu                          " Sets numberlines
+set nowrap                      " Do not wrap long lines
+set autoindent                  " Indent at the same level of the previous line
+set sidescroll=1
+
+set hlsearch                    " Sets highlighting of matches
+set incsearch                   " Find as you type search
+set ignorecase                  " Case insensitive search
+set smartcase                   " Case sensitive when uc present
+set wildmenu                    " Show list instead of just completing
+set wildmode=list:longest,full  " Command <Tab> completion, list matches, then longest common part, then all.
+set scrolljump=1                " Lines to scroll when cursor leaves screen
+set scrolloff=2                 " Minimum lines to keep above and below cursor
+set foldenable                  " Auto fold code
+set list
+set listchars=tab:›\ ,trail:•,extends:▶,nbsp:. " Highlight problematic whitespace
+
+map <C-a> <esc>ggVG
+map <C-h> <esc>V%
+map <C-m> <esc>V%=
+map <C-y> "+y
+map <C-p> <esc>"+P
+
+set clipboard+=unnamed
