@@ -15,3 +15,4 @@
 	tool = vimdiff
 [core]
 	trustctime = false
+	editor = vim

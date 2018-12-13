@@ -4,6 +4,8 @@ PROMPT_DIRTRIM=2;
 export MYSQL_PS1="\u [\d]> ";
 export TERM=screen-256color
 export NODE_PATH=/usr/lib/node_modules
+export VISUAL=vim
+export EDITOR="$VISUAL"
 
 alias O="gnome-open"
 alias ll='ls -ahlFX'
