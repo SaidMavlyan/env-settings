@@ -1,2 +1,7 @@
-tree aptitude vim vim-doc exuberant-ctags terminator
-lftp meld gparted retext vlc mp3splt
+nvm
+tmux
+vim
+vim-doc
+meld
+gparted
+tree
