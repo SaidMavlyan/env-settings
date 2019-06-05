@@ -1,7 +1,9 @@
 nvm
 tmux
 vim
+vim-gtk
 vim-doc
 meld
 gparted
 tree
+dict
