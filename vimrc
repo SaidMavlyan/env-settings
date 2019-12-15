@@ -38,6 +38,7 @@ colorscheme nss                 " Custom colorscheme
 set mouse=a                     " Automatically enable mouse usage
 set mousehide                   " Hide the mouse cursor while typing
 set nu                          " Sets numberlines
+set relativenumber              " Sets relative numberlines
 set nowrap                      " Do not wrap long lines
 set autoindent                  " Indent at the same level of the previous line
 set sidescroll=1

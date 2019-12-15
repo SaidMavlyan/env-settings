@@ -1,4 +1,5 @@
 git
+curl
 nvm
 tmux
 vim

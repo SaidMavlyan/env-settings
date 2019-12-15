@@ -9,7 +9,6 @@ export EDITOR="$VISUAL"
 
 alias O="gnome-open"
 alias ll='ls -ahlFX'
-alias node="nodejs"
 
 function cd() { builtin cd "$@" && ls; }
 
