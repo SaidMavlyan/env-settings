@@ -8,7 +8,10 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 alias O="gnome-open"
+alias pom5="date; sleep 300; notify-send 'work'; date"
+alias pom25="echo 'start'; date; sleep 1500; notify-send 'pom'; pom5"
 alias ll='ls -ahlFX'
+export PATH=$PATH:/sbin
 
 function cd() { builtin cd "$@" && ls; }
 
