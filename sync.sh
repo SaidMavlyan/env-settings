@@ -8,6 +8,7 @@ then
   rsync -avz vimrc $HOME/.vimrc
   rsync -avz ideavimrc $HOME/.ideavimrc
   rsync -avz mongorc.js $HOME/.mongorc.js
+  mkdir -p $HOME/.vim/colors
   rsync -avz vim/colors/nss.vim $HOME/.vim/colors/nss.vim
   rsync -avz gitconfig $HOME/.gitconfig
   rsync -avz tmux.conf $HOME/.tmux.conf
