@@ -25,3 +25,5 @@ map <C-y> "+y
 map <C-p> <esc>"+P
 
 set clipboard+=unnamed
+set visualbell
+set noerrorbells
