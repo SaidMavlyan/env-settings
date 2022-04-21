@@ -4,6 +4,7 @@ read -p "This will overwrite your environment files. Are you sure? " -n 1 -r
 echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
+  rsync -avz bashrc $HOME/.bashrc
   rsync -avz bash_aliases $HOME/.bash_aliases
   rsync -avz vimrc $HOME/.vimrc
   rsync -avz ideavimrc $HOME/.ideavimrc
