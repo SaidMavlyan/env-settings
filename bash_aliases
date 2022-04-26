@@ -1,3 +1,9 @@
+export CLICOLOR=1
+[ -f /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh ] && . /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
+export GIT_PS1_SHOWCOLORHINTS=1
+export GIT_PS1_SHOWDIRTYSTATE=1
+export GIT_PS1_SHOWUPSTREAM="auto"
+
 PS1="\$(__git_ps1 \"(%s)\")\n\[\e]0;\u@\h:\w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$ ";
 PROMPT_DIRTRIM=2;
 
@@ -10,7 +16,7 @@ export EDITOR="$VISUAL"
 alias O="gnome-open"
 alias pom5="date; sleep 300; notify-send 'work'; date"
 alias pom25="echo 'start'; date; sleep 1500; notify-send 'pom'; pom5"
-alias ll='ls -ahlFX'
+alias ll='ls -AFlh'
 export PATH=$PATH:/sbin
 
 function cd() { builtin cd "$@" && ls; }

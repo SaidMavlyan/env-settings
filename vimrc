@@ -54,8 +54,12 @@ set scrolloff=2                 " Minimum lines to keep above and below cursor
 set foldenable                  " Auto fold code
 set list
 set listchars=tab:›\ ,trail:•,extends:▶,nbsp:. " Highlight problematic whitespace
-" set clipboard=unnamed
-set clipboard=unnamedplus
+
+if system('uname -s') == "Darwin\n"
+  set clipboard=unnamed "OSX
+else
+  set clipboard=unnamedplus "Linux
+endif
 
 set hidden                          " Allow buffer switching without saving
 set diffopt=vertical

@@ -4,7 +4,7 @@ read -p "This will overwrite your repo files. Are you sure? " -n 1 -r
 echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-  rsync -avz $HOME/.bashrc bashrc
+  rsync -avz $HOME/.bash_profile bash_profile
   rsync -avz $HOME/.bash_aliases bash_aliases
   rsync -avz $HOME/.vimrc vimrc
   rsync -avz $HOME/.ideavimrc ideavimrc
